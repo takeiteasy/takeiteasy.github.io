@@ -1,0 +1,114 @@
+* {
+	margin:  0;
+	padding: 0;
+}
+div { display: block; }
+img { border:  0;     }
+
+body {
+	font-family:      sans-serif;
+	background-color: #EAEAEA;
+}
+
+.kuroneko {
+	background-image:    url('kuroneko.jpg');
+	background-position: left top;
+	background-repeat:   no-repeat;
+	background-size:     contain;
+	
+	width:  317px;
+	height: 470px;
+	
+	position: absolute;
+	bottom:   0px;
+	left: 	  5px
+}
+
+.kuroneko_copyright {
+	color: 	  #CCCCCC;
+	position: absolute;
+	bottom:   1px;
+	right:    1px;
+}
+.kuroneko_copyright a         { color: #CCCCCC; text-decoration: none; }
+.kuroneko_copyright a:hover   { color: #B4B2B2; text-decoration: none; }
+.kuroneko_copyright a:visited { color: #B4B2B2; text-decoration: none; }
+
+#fork {
+	position: absolute;
+	top:      0;
+	right:    0;
+}
+
+.title {
+	width:      100%;
+	margin:     0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.menu {
+	position:   absolute;
+	top:        50%;
+	width:      100%;
+	margin:     0 auto;
+	margin-top: -250px;
+	text-align: center;
+}
+
+#menu_title {
+	color: #dfdfdf;
+}
+
+#seperator {
+	margin:0px 30px 0px 30px
+}
+
+.menu_item {
+	display: inline-block;
+	position: relative;
+}
+
+.menu_box {
+	background-image:    url('arrow.png');
+	background-position: center top;
+	background-repeat:   no-repeat;
+	
+	padding:  5px;
+	position: absolute;
+	display:  none;
+	margin:   0 auto;
+	top:      50%;
+	left:     50%;
+	z-index:  1;
+}
+
+.menu_box_inner {
+	background-color: #3972AF;
+	color:            #EAEAEA;
+	
+	-webkit-border-radius: 2px;
+    border-radius:         2px;
+    padding:               5px;
+    text-align:            left;
+}
+.menu_box_inner a         { color: #D14F08; text-decoration: none; }
+.menu_box_inner a:hover   { color: #D14F08; text-decoration: none; }
+.menu_box_inner a:visited { color: #D14F08; text-decoration: none; }
+.menu_box_inner ul        { padding-left: 20px; }
+.menu_box_inner h3        { text-align: center; }
+
+#menu_me_box {
+	width:       400px;
+	margin-left: -200px;
+}
+
+#menu_branch_box {
+	width:       360px;
+	margin-left: -180px;
+}
+
+#menu_www_box {
+	width:       200px;
+	margin-left: -100px;
+}
