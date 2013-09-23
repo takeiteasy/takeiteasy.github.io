@@ -61,11 +61,11 @@ body {
 }
 
 #seperator {
-	margin:0px 30px 0px 30px
+	margin: 0px 30px 0px 30px
 }
 
 .menu_item {
-	display: inline-block;
+	display:  inline-block;
 	position: relative;
 }
 
@@ -95,8 +95,8 @@ body {
 .menu_box_inner a         { color: #D14F08; text-decoration: none; }
 .menu_box_inner a:hover   { color: #D14F08; text-decoration: none; }
 .menu_box_inner a:visited { color: #D14F08; text-decoration: none; }
-.menu_box_inner ul        { padding-left: 20px; }
-.menu_box_inner h3        { text-align: center; }
+.menu_box_inner ul        { padding-left: 20px;   }
+.menu_box_inner h3        { text-align:   center; }
 
 #menu_me_box {
 	width:       400px;
