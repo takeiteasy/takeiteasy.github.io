@@ -1,114 +1,112 @@
 * {
-	margin:  0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
-div { display: block; }
-img { border:  0;     }
-
+div {
+    display: block;
+}
+img {
+    border: 0;
+}
 body {
-	font-family:      sans-serif;
-	background-color: #EAEAEA;
+    font-family: sans-serif;
+    font-size: 16pt;
+    background-color: #3E352D;
+    color: #F0E6DC;
 }
-
+.cont {
+    margin: 50px;
+    max-width: 800px;
+    min-width: 600px;
+}
+#profile {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-box-shadow: -3px 3px 2px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -3px 3px 2px rgba(50, 50, 50, 0.75);
+    box-shadow: -3px 3px 2px rgba(50, 50, 50, 0.75);
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin: 0em 1em 0.3em 0em;
+}
+.highlight {
+    color: #9D7F4E;
+    font-weight: 800;
+}
+.vim {
+    color: #809D4E;
+    font-weight: 800;
+}
+.cont a {
+    font-weight: 800;
+    color: #D4A459;
+    text-decoration: none;
+}
+.cont a:hover {
+    color: #F0E6DC;
+    text-decoration: inherit;
+}
+.footer {
+    margin-top: 1em;
+    font-family: cursive;
+    color: #67543A;
+    text-align: right;
+    padding-right: 100px;
+}
 .kuroneko {
-	background-image:    url('kuroneko.jpg');
-	background-position: left top;
-	background-repeat:   no-repeat;
-	background-size:     contain;
-	
-	width:  317px;
-	height: 470px;
-	
-	position: absolute;
-	bottom:   0px;
-	left: 	  5px
+    background-image: url("kuroneko.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 297px;
+    height: 441px;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
 }
-
 .kuroneko_copyright {
-	color: 	  #CCCCCC;
-	position: absolute;
-	bottom:   1px;
-	right:    1px;
+    font-size: 11pt;
+    color: #544939;
+    position: absolute;
+    bottom: 1px;
+    left: 7px;
 }
-.kuroneko_copyright a         { color: #CCCCCC; text-decoration: none; }
-.kuroneko_copyright a:hover   { color: #B4B2B2; text-decoration: none; }
-.kuroneko_copyright a:visited { color: #B4B2B2; text-decoration: none; }
-
-#fork {
-	position: absolute;
-	top:      0;
-	right:    0;
+.kuroneko_copyright a {
+    color: #67543A;
+    text-decoration: inherit;
 }
-
-.title {
-	width:      100%;
-	margin:     0 auto;
-	margin-top: 100px;
-	text-align: center;
+.kuroneko_copyright a:hover {
+    color: #67543A;
+    text-decoration: inherit;
 }
-
-.menu {
-	position:   absolute;
-	top:        50%;
-	width:      100%;
-	margin:     0 auto;
-	margin-top: -250px;
-	text-align: center;
+.projects {
+    display: none;
+    position: absolute;
+    width: 555px;
+    margin: -18px 0px 0px 18px;
 }
-
-#menu_title {
-	color: #dfdfdf;
+.projects_inner {
+    background-color: #A7875B;
+    color: #67543A;
+    padding: 10px;
 }
-
-#seperator {
-	margin: 0px 30px 0px 30px
+.projects_inner a {
+    color: #33281A;
+    text-decoration: inherit;
 }
-
-.menu_item {
-	display:  inline-block;
-	position: relative;
+.projects_inner a:hover {
+    color: #F0E6DC;
+    text-decoration: inherit;
 }
-
-.menu_box {
-	background-image:    url('arrow.png');
-	background-position: center top;
-	background-repeat:   no-repeat;
-	
-	padding:  5px;
-	position: absolute;
-	display:  none;
-	margin:   0 auto;
-	top:      50%;
-	left:     50%;
-	z-index:  1;
-}
-
-.menu_box_inner {
-	background-color: #3972AF;
-	color:            #EAEAEA;
-	
-	-webkit-border-radius: 2px;
-    border-radius:         2px;
-    padding:               5px;
-    text-align:            left;
-}
-.menu_box_inner a         { color: #D14F08; text-decoration: none; }
-.menu_box_inner a:hover   { color: #D14F08; text-decoration: none; }
-.menu_box_inner a:visited { color: #D14F08; text-decoration: none; }
-.menu_box_inner ul        { padding-left: 20px;   }
-.menu_box_inner h3        { text-align:   center; }
-
-#menu_me_box {
-	width:       400px;
-	margin-left: -200px;
-}
-
-#menu_branch_box {
-	width:       360px;
-	margin-left: -180px;
-}
-
-#menu_www_box {
-	width:       200px;
-	margin-left: -100px;
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 10px 20px 10px;
+    border-color: transparent transparent #A7875B transparent;
+    position: absolute;
+    right: 20px;
+    top: -17px;
 }
