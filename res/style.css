@@ -31,14 +31,6 @@ body {
     float: left;
     margin: 0em 1em 0.3em 0em;
 }
-.highlight {
-    color: #9D7F4E;
-    font-weight: 800;
-}
-.vim {
-    color: #809D4E;
-    font-weight: 800;
-}
 .cont a {
     font-weight: 800;
     color: #D4A459;
@@ -100,6 +92,29 @@ body {
     color: #F0E6DC;
     text-decoration: inherit;
 }
+.highlight {
+    color: #9D7F4E;
+    font-weight: 800;
+}
+.langruby {
+    color: rgb(185, 33, 34);
+}
+.langc {
+    color: rgb(137, 137, 137);
+}
+.langperl {
+    color: rgb(2, 152, 195);
+}
+.langd {
+    color: rgb(252, 212, 109);
+}
+.langrust a {
+    color: rgb(222, 165, 132);
+}
+.vim {
+    color: #809D4E;
+    font-weight: 800;
+}
 .triangle {
     width: 0px;
     height: 0px;
@@ -109,4 +124,10 @@ body {
     position: absolute;
     right: 20px;
     top: -17px;
+}
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
 }
