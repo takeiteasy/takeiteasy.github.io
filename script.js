@@ -49,7 +49,7 @@ $(document).ready(function() {
     success:  function (r) {
       for (x in r) {
         if (!isNaN(x))
-          $('#projects_' + (main.contains(r[x].name) ? 'a' : 'b')).append('<div class="project_title_box"><span class="project_title">' + r[x].name + '</span><br/>' + (r[x].description === null ? '' : '<span class="project_subtitle">' + r[x].description + '</span>') + '<div class="project_title_lang">' + (r[x].stargazers_count > 0 ? svg_star + ' ' + r[x].stargazers_count + ' - ' : '') + '<span class="language-text">' + r[x].language + '</span><div class="language-cirlce" style="background-color: ' + lang_bgcol[r[x].language] + '"></div></div></div>');
+          $('#projects_' + (main.contains(r[x].name) ? 'a' : 'b')).append('<div class="project_title_box"><span class="project_title"><a href="' + r[x].html_url + '">' + r[x].name + '</a></span> ' + (r[x].description === null ? '' : '<span class="project_subtitle">' + r[x].description + '</span>') + '<div class="project_title_lang">' + (r[x].stargazers_count > 0 ? svg_star + ' ' + r[x].stargazers_count + ' - ' : '') + '<span class="language-text">' + r[x].language + '</span><div class="language-cirlce" style="background-color: ' + lang_bgcol[r[x].language] + '"></div></div></div>');
       }
     },
     error: function () {
