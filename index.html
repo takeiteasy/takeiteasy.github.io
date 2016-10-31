@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>take it easy</title>
   </HEAD>
   <BODY>
@@ -16,17 +18,17 @@
       </svg>
     </a>
     <div class="cont">
-      <a href="https://github.com/takeiteasy"><img id="profile" src="https://avatars2.githubusercontent.com/u/1756698?v=3&s=466" class="animated bounceInDown"/></a>
+      <div id="first">
+        <a href="https://github.com/takeiteasy"><img id="profile" src="https://avatars2.githubusercontent.com/u/1756698?v=3&s=466" class="animated bounceInDown"/></a>
 
-      <div id="cont">
         <div class="animated bounceInUp">
-          <span>My name is <a href="mailto:gigolo@hotmail.co.uk">George Watson</a>. I'm a hobbyist programmer from the <span class="highlight">UK</span>. My favourite languages are <span class="highlight" style="color: rgb(137, 137, 137)">C</span> and <span class="highlight" style="color: rgb(185, 33, 34)">Ruby</span> - I also like <span class="highlight" style="color: rgb(252, 212, 109)">JS</span> & <span class="highlight" style="color: #244776">Coffescript</span>, <span class="highlight" style="color: #89e051">Shell</span>, <span class="highlight" style="color: #3572A5">Python</span> and <span class="highlight" style="color: rgb(2, 152, 195)">Perl</span>. I also have experience in <span class="highlight" style="color: #f34b7d">C++</span>, and to a lesser extent <span class="highlight" style="color: #4F5D95">PHP</span>, <span class="highlight" style="color: #ba595e">D</span> and <span class="highlight" style="color: #178600">C#</span>.</span><br/><br/>
+          <span>My name is <a href="mailto:gigolo@hotmail.co.uk">George Watson</a>. I'm a hobbyist programmer from the <span class="highlight">UK</span>. My favourite languages are <span class="highlight" style="color: #888888">C</span> and <span class="highlight" style="color: #b92122">Ruby</span> - I also like <span class="highlight" style="color: #fcd56e">JS</span> & <span class="highlight" style="color: #244776">Coffescript</span>, <span class="highlight" style="color: #89e051">Shell</span>, <span class="highlight" style="color: #3572A5">Python</span> and <span class="highlight" style="color: #0298c3">Perl</span>. I also have experience in <span class="highlight" style="color: #f34b7d">C++</span>, and to a lesser extent <span class="highlight" style="color: #4F5D95">PHP</span>, <span class="highlight" style="color: #ba595e">D</span> and <span class="highlight" style="color: #178600">C#</span>.</span><br/><br/>
         </div>
         <div id="d1" class="animated bounceInUp">
-          <span>My main OS is <span class="highlight">OS X</span> at the moment. It may seem like an unpopular opinion, but it feels like <span class="highlight"><i>Fancy</i> Unix</span> to me. When I'm not using <span class="highlight">OS X</span>, I prefer using <span class="highlight">Linux</span>. More specifically, <a href="https://www.archlinux.org/">Arch Linux</a> or <span class="highlight" style="color: rgb(199, 0, 54)">Debian</span>. I like how bare <span style="color: rgb(22, 144, 202)">Arch</span> is and how stable <span style="color: rgb(199, 0, 54)">Debian</span> is. I use Windows too - but only for a HTPC, running Plex - that's it. My favourite editor is <span class="vim">Vim</span> and <span class="atom">Atom</span> (with <span class="vim">Vim</span> mode).</span><br/><br/>
+          <span>My main OS is <span class="highlight">OS X</span> at the moment. It may seem like an unpopular opinion, but it feels like <span class="highlight"><i>Fancy</i> Unix</span> to me. When I'm not using <span class="highlight">OS X</span>, I prefer using <span class="highlight">Linux</span>. More specifically, <span class="highlight" style="color: #1690c9">Arch Linux</span> or <span class="highlight" style="color: #c70036">Debian</span>. I like how bare <span style="color: #1690c9">Arch</span> is and how stable <span style="color: #c70036">Debian</span> is. I use Windows too - but only for a HTPC, running Plex - that's it. My favourite editor is <span class="vim">Vim</span> and <span class="atom">Atom</span> (with <span class="vim">Vim</span> mode).</span><br/><br/>
         </div>
         <div id="d2" class="animated bounceInUp">
-          <span>Being a hobbyist, I prefer working on my own, small <a href="https://github.com/takeiteasy?tab=repositories" id="projects">projects</a> - so any <a href="https://github.com/takeiteasy/utils/blame/master/dupes.rb#L4">spaghetti</a> <a href="https://github.com/takeiteasy/anime-ren/blame/master/anidb.py#L124">code</a> <a href="https://github.com/takeiteasy/anime-ren/blame/master/anidb.py#L59-L62">you</a> <a href="https://github.com/takeiteasy/dota2.sh/blob/master/GetMatchHistory.sh">see</a> is just because I do it on purpose. Occationally I'll fork a project, but generally only develop my own stuff. It's nice if someone else finds a use for them, or likes them though. Sometimes <a href="https://github.com/takeiteasy/comodore64-css">I</a> <a href="https://github.com/takeiteasy/start-page">even</a> <a href="https://github.com/takeiteasy/takeiteasy.github.io">do</a> <a href="http://geocities.ws/lolpenis/">web-design</a>.</span><br/><br/>
+          <span>Being a hobbyist, I prefer working on my own, small <a href="#" id="projects">projects</a> - so any <a href="https://github.com/takeiteasy/utils/blame/master/dupes.rb#L4">spaghetti</a> <a href="https://github.com/takeiteasy/anime-ren/blame/master/anidb.py#L124">code</a> <a href="https://github.com/takeiteasy/anime-ren/blame/master/anidb.py#L59-L62">you</a> <a href="https://github.com/takeiteasy/dota2.sh/blob/master/GetMatchHistory.sh">see</a> is just because I do it on purpose. Occationally I'll fork a project, but generally only develop my own stuff. It's nice if someone else finds a use for them, or likes them though. Sometimes <a href="https://github.com/takeiteasy/comodore64-css">I</a> <a href="https://github.com/takeiteasy/start-page">even</a> <a href="https://github.com/takeiteasy/takeiteasy.github.io">do</a> <a href="http://geocities.ws/lolpenis/">web-design</a>.</span><br/><br/>
         </div>
         <div id="d3" class="animated bounceInUp">
           <span>All my stuff is open-source, and licensed under either <span class="highlight">3-clause BSD</span>, <span class="highlight">MIT</span> or the very comical <a href="http://www.wtfpl.net/txt/copying/">WTFPL</a>.</span><br/><br/>
@@ -34,7 +36,14 @@
         <div id="d4" class="animated bounceInUp">
           <span>On a personal note, in my space time, when I'm not programming I love <span class="highlight">Cars</span> (Classics mostly - <i>1970 Dodge Charger is my dream car</i>), I <span class="highlight">Lift</span> weights (<i>gettin swole - we're all gonna make it</i>), I love <span class="highlight">Guns</span> (<i>1911s, Nagants, <b>any</b> lever action</i>), I watch <span class="highlight">Movies</span> (<i>Triller, Drama, Spaghetti Westerns, Kung-fu</i>), <a href="http://anidb.net/u466910">Animu</a> (<i>Akagi, Kaiji, Cromartie, Clannad</i>) and <span class="highlight">TV</span> (<i>Old Simpsons, King of the Hill, The Sopranos, Breaking Bad</i>). Read <span class="highlight">Books</span> (<i>Clockwork Orange, Brave New World, 1984</i>) and <span class="highlight">Mango</span> (<i>Oyasumi Pun-Pun, Watamote, Dead Dead Demon's Dededededestruction</i>). Listen to <span class="highlight">Music</span> (<i>Johnny Cash, Rush, Nirvana</i>). I also play <span class="highlight">Guitar</span> (badly), play <span class="highlight">Mahjong</span> (online) and collect hats.</span>
         </div>
-        <div id="footer" class="animated bounceIn">&middot; <span class="highlight">take it easy</span> &middot;</div>
+        <div class="footer animated bounceIn">&middot; <span class="highlight">take it easy</span> &middot;</div>
+      </div>
+      <div id="second">
+        <h1 class="header">Projects</h1>
+        <div class="projects_list" id="projects_a"></div>
+        <h4 class="header">Minor Projects</h4>
+        <div class="projects_list" id="projects_b"></div>
+        <div class="footer">&middot; <a href="#" id="goback">go back</a> &middot;</div>
       </div>
     </div>
   </BODY>

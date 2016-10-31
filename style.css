@@ -23,9 +23,14 @@ body {
   margin-top: 45px;
   max-width:  800px;
   min-width:  600px;
+  position:   relative;
 }
 
-#footer {
+.header{
+  border-bottom: solid 1px #333;
+}
+
+.footer {
   margin-top:              1em;
   font-family:             cursive;
   color:                   #67543A;
@@ -116,4 +121,61 @@ body {
 #d4 {
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay:    0.8s;
+}
+
+#first {
+  z-index: 10;
+}
+
+.projects_list {
+  margin: 10px 0px 10px 0px;
+}
+
+#projects_a .project_title {
+  font-size:   xx-large;
+  font-weight: 600;
+  color:       #3879d9;
+}
+
+#projects_b .project_title {
+  color: #3879d9;
+}
+
+.project_subtitle {
+  color:     rgb(101, 101, 101);
+  font-size: small;
+}
+
+.project_title_box {
+  padding:  3px;
+  position: relative;
+}
+
+.project_title_lang {
+  position:  absolute;
+  right:     1px;
+  top:       1px;
+  font-size: small;
+}
+
+.language-cirlce {
+	position:      absolute;
+	top:           2.5px;
+  right:        0px;
+	width:         12px;
+	height:        12px;
+	border-radius: 50%;
+}
+
+.language-text {
+  margin-right: 16px;
+}
+
+#second {
+  width:    100%;
+  height:   100%;
+  position: absolute;
+  top:      0;
+  left:     0;
+  display:  none;
 }
