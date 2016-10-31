@@ -147,7 +147,6 @@ body {
 }
 
 .project_title_box {
-  padding:  3px;
   position: relative;
 }
 
@@ -160,8 +159,8 @@ body {
 
 .language-cirlce {
 	position:      absolute;
-	top:           2.5px;
-  right:        0px;
+	top:           4.5px;
+  right:         0px;
 	width:         12px;
 	height:        12px;
 	border-radius: 50%;

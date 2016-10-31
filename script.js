@@ -41,6 +41,7 @@ $(document).ready(function() {
     "HTML":         "#e44b23",
     "CSS":          "#563d7c"
   };
+  var svg_star = '<svg aria-hidden="true" class="star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>'
   $.ajax({
     type:     "GET",
     url:      "https://api.github.com/users/takeiteasy/repos",
@@ -48,7 +49,7 @@ $(document).ready(function() {
     success:  function (r) {
       for (x in r) {
         if (!isNaN(x))
-          $('#projects_' + (main.contains(r[x].name) ? 'a' : 'b')).append('<div class="project_title_box"><span class="project_title">' + r[x].name + '</span><br/>' + (r[x].description === null ? '' : '<span class="project_subtitle">' + r[x].description + '</span>') + '<div class="project_title_lang"><span class="language-text">' + r[x].language + '</span><div class="language-cirlce" style="background-color: ' + lang_bgcol[r[x].language] + '"></div></div></div>');
+          $('#projects_' + (main.contains(r[x].name) ? 'a' : 'b')).append('<div class="project_title_box"><span class="project_title">' + r[x].name + '</span><br/>' + (r[x].description === null ? '' : '<span class="project_subtitle">' + r[x].description + '</span>') + '<div class="project_title_lang">' + (r[x].stargazers_count > 0 ? svg_star + ' ' + r[x].stargazers_count + ' - ' : '') + '<span class="language-text">' + r[x].language + '</span><div class="language-cirlce" style="background-color: ' + lang_bgcol[r[x].language] + '"></div></div></div>');
       }
     },
     error: function () {
