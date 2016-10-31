@@ -80,6 +80,11 @@ body {
   font-weight: 800;
 }
 
+.nohighlight {
+  color: #333 !important;
+  font-weight: normal !important;
+}
+
 .vim {
   color: #809D4E;
   font-weight: 800;
