@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin:  0;
   padding: 0;
 }
 
@@ -12,96 +12,108 @@ img {
 }
 
 body {
-  font-family: '.SFNSText-Regular', 'San Francisco Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
-  font-size: 14pt;
-  color: #333;
+  font-family:      '.SFNSText-Regular', 'San Francisco Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  font-size:        14pt;
+  color:            #333;
   background-color: #F0F0F0;
 }
 
 .cont {
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 800px;
-  min-width: 600px;
+  margin:     0 auto;
+  margin-top: 45px;
+  max-width:  800px;
+  min-width:  600px;
 }
 
-.footer {
-    margin-top: 1em;
-    font-family: cursive;
-    color: #67543A;
-    text-align: right;
-    padding-right: 100px;
+#footer {
+  margin-top:              1em;
+  font-family:             cursive;
+  color:                   #67543A;
+  text-align:              right;
+  padding-right:           100px;
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay:    1.8s;
 }
 
 #profile {
   -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
-  width: 160px;
-  height: 160px;
-  float: left;
-  margin: 0em 1em 0em 0em;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
+  width:                 160px;
+  height:                160px;
+  float:                 left;
+  margin:                0em 1em 0em 0em;
 }
 
 .cont a {
-  font-weight: 800;
-  color: #94b7eb;
+  font-weight:     800;
+  color:           #94b7eb;
   text-decoration: none;
 }
+
 .cont a:hover {
-  color: #3879d9;
-  text-decoration: inherit;
-}
-
-.projects {
-  display: none;
-  position: absolute;
-  width: 555px;
-  margin: -18px 0px 0px 18px;
-}
-
-.projects_inner {
-  border-color: #eee;
-  background-color: #d6d6d6;
-  color: #a6a6a6;
-  padding: 10px;
-}
-.projects_inner a {
-  color: #f2f2f2;
-  text-decoration: inherit;
-}
-.projects_inner a:hover {
-  color: #3879d9;
+  color:           #3879d9;
   text-decoration: inherit;
 }
 
 .highlight {
-  color: #3879d9;
+  color:       #3879d9;
   font-weight: 800;
 }
 
 .nohighlight {
-  color: #333 !important;
+  color:       #333 !important;
   font-weight: normal !important;
 }
 
 .vim {
-  color: #809D4E;
+  color:       #809D4E;
   font-weight: 800;
 }
 
 .atom {
-  color: rgb(88, 75, 79);
+  color:       rgb(88, 75, 79);
   font-weight: 800;
 }
 
-.triangle {
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0 10px 20px 10px;
-  border-color: transparent transparent #d4d4d4 transparent;
-  position: absolute;
-  right: 20px;
-  top: -17px;
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  20%, 60% {
+    transform: rotate(-25deg)
+  }
+  40%, 80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+#d1 {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay:    0.2s;
+}
+#d2 {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay:    0.4s;
+}
+#d3 {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay:    0.6s;
+}
+#d4 {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay:    0.8s;
 }
