@@ -24,7 +24,7 @@ $(document).ready(function() {
     animate_one('#second', 'bounceOutUp', true);
   });
 
-  var main = ['tripping', 'doujin-db', 'xget', 'anime-ren', 'xnzb'];
+  var main = ['tripping', 'doujin-db', 'xget', 'anime-ren', 'chinchirorin'];
   var lang_bgcol = {
     "Python":       "#3572A5",
     "CoffeeScript": "#244776",
@@ -39,7 +39,8 @@ $(document).ready(function() {
     "C#":           "#178600",
     "VimL":         "#199f4b",
     "HTML":         "#e44b23",
-    "CSS":          "#563d7c"
+    "CSS":          "#563d7c",
+    "Objective-C":  "#438eff"
   };
   var svg_star = '<svg aria-hidden="true" class="star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"></path></svg>'
   $.ajax({
