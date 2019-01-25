@@ -24,7 +24,7 @@ $(document).ready(function() {
     animate_one('#second', 'bounceOutUp', true);
   });
 
-  var main = ['tripping', 'doujin-db', 'xget', 'anime-ren', 'chinchirorin'];
+  var main = ['sgl', 'doujinshi-db', 'xget'];
   var lang_bgcol = {
     "Python":       "#3572A5",
     "CoffeeScript": "#244776",
